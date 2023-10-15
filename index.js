@@ -29,13 +29,6 @@ app.get ('/categories/:id', (req, res)=>{
         res.send(categoryNews)
     }
 })
-// app.get ('/news/:id', (req, res)=>{
-//     const id = req.params.id; 
-//     console.log(id)
-//     const filterNews = news.filter(n=> n.category_id == id)
-//     res.send(filterNews)
-// })
-
 
 app.listen(port, ()=>{
     console.log(`server site port ${port}` )
